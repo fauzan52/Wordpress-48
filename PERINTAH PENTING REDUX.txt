@@ -1,0 +1,14 @@
+MENGAKTIFKAN REDUX
+=> INSTALL PLUGIN REDUX
+sekolahkoding/functions.php
+require_once(get_template_directory()."/library/redux-core/framework.php");
+require_once(get_template_directory()."/library/sample/config.php");
+
+MEMBUAT MENU DI REDUX
+Buka sekolahkoding/library/sample/config.php
+Redux::set_section($opt_name, array(
+    'title' => __('Header', 'FA'),
+    'id' => 'header',
+    'desc' => __('This is header section area', 'FA'),
+    'icon' => __('dashicons dashicons-heading', 'FA')
+));

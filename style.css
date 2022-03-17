@@ -1,0 +1,694 @@
+/*
+Theme Name: TEMA FAUZAN
+Theme URI:  http://wordpress.org/
+Author: Fauzan Alghifari
+Author URI: http://wordpress.org/
+Description: tema untuk kalian
+*/
+
+/*CSS HEADER*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    border: 2px solid orange;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 100px;
+    z-index: 10;
+    background: black;
+}
+
+.app-header{
+    width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.app-header .app-header__images {
+    max-width: 200px;
+    max-height: 100px;
+    width: 100%;
+    right: 100%;
+}
+
+.app-header .app-header__images img {
+    position: relative;
+    object-fit: cover;
+}
+
+.app-header .app-header__navigation{
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.app-header .app-header__navigation ul{
+    justify-content: center;
+    flex-wrap: wrap;
+    font-weight: 500;
+}
+
+.app-header .app-header__navigation li{
+    list-style: none;
+    margin: 0 5px;
+    display: inline-block;
+    float: left;
+}
+
+.app-header .app-header__navigation li a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    letter-spacing: 1px;
+}
+
+.app-header .app-header__navigation li a:hover {
+    color: orange;
+}
+
+header .search {
+    position: relative;
+    width: 300px;
+    height: 40px;
+}
+
+header .search input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: black;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 0 10px 0 45px;
+}
+
+header .search input::placeholder {
+    color: black;
+}
+
+header .search .fa-search {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;
+    color: black;
+    border-right: 1px solid black;
+    padding-right: 10px;
+
+}
+
+.current_page_parent a, .current-menu-item a {
+    border-bottom: 2px solid orange;
+    padding: 10px;
+}
+
+.aside {
+    margin-top: 20px;
+    float: left;
+}
+
+/*CSS ADV TOP*/
+.app-card-first {
+    width: 1280px;
+    height: 150px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0 0 10px black;
+    margin-bottom: 20px;
+    border-radius: 10px
+}
+
+.app-card-first .app-card-first__container {
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+}
+
+.app-card-first .app-card-first__container .app-card-first__images {
+    border-radius: 10px;
+    width: 1280px;
+    height: 150px;
+}
+
+.app-card-first .app-card-first__container .app-card-first__images img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+/*CSS CALENDER*/
+.app-card-calender {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    background: orange;
+    margin-top: 50px;
+}
+
+.app-card-calender table {
+    text-align: center;
+    padding: 1px;
+    border: 1px solid black;
+}
+
+/*CSS ADV RIGHT*/
+.app-card-adv-right {
+    width: 1280px;
+    height: 245px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0 0 10px black;
+    /*margin-top: 60px;*/
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.app-card-adv-right .app-card-adv-right__images {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.app-card-adv-right .app-card-adv-right__images img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.app-card-adv-right2 {
+    width: 1280px;
+    height: 245px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0 0 10px black;
+    /*margin-top: 60px;*/
+    border-radius: 10px;
+}
+
+.app-card-adv-right2 .app-card-adv-right2__images {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.app-card-adv-right2 .app-card-adv-right2__images img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/*CSS SINGLE PAGE*/
+.singlepage {
+    width: 1280px;
+    height: 100%;
+    background: white;
+    margin-bottom: 20px;
+}
+
+.singlepage .singlepage__images {
+    border-radius: 10px;
+    width: 100%;
+    height: 400px;
+}
+
+.singlepage .singlepage__images img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.singlepage .singlepage__text {
+    margin-top: 20px;
+}
+
+.singlepage .singlepage__text h1 {
+    font-size: 28px;
+}
+
+.singlepage .singlepage__text p {
+    font-size: 20px;
+}
+
+.singlepage .singlepage__text h3 {
+    font-size: 20px;
+    text-align: justify;
+}
+
+
+
+/*CSS CONTENT TOP*/
+.flex {
+    display: flex;
+    width: 100%;
+    max-width: 1280px;
+    float: left;
+}
+
+.distance{
+    margin-top: 90px;
+}
+
+.app-card-primary {
+    width: 1280px;
+    height: 500px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0 0 10px black;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.app-card-primary .app-card-primary__container {
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+    border-radius: 10px;
+    height: auto;
+}
+
+.app-card-primary .app-card-primary__container .app-card-primary__images {
+    border-radius: 10px;
+    width: 1280px;
+    height: 500px;
+}
+
+.app-card-primary .app-card-primary__container .app-card-primary__images img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+    transition: transform 1s;
+}
+
+.app-card-primary .app-card-primary__container .app-card-primary__images img:hover {
+    transform: scale(1.1);
+}
+
+.app-card-primary .app-card-primary__container .app-card-primary__images a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.app-card-primary .app-card-primary__container .app-card-primary__images .app-card-primary__background h3 {
+    width: 100%;
+    padding: 40px;
+    top: 390px;
+    position: absolute;
+    font-size: 26px;
+    color: white;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(255,165,0,0) 100%);
+}
+
+.app-card-primary .app-card-primary__container .app-card-primary__images .app-card-primary__background a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.app-card-primary .app-card-primary__container .app-card-primary__images .app-card-primary__background a:hover {
+    color: orange;
+}
+
+.app-card-primary .app-card-primary__box p {
+    font-size: 14px;
+}
+
+.app-card-secondary {
+    width: 1280px;
+    height: 500px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0 0 10px black;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    /*margin-right: 10px;*/
+}
+
+.app-card-secondary .app-card-secondary__container .app-card-secondary__images {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.app-card-secondary .app-card-secondary__container .app-card-secondary__images img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    filter: brightness(100%);
+    transition:  filter 0.5s ease;
+}
+
+.app-card-secondary .app-card-secondary__container .app-card-secondary__images img:hover {
+    filter: brightness(120%);
+}
+
+.app-card-secondary .app-card-secondary__box {
+    padding: 20px;
+}
+
+.app-card-secondary .app-card-secondary__box h3 {
+    font-size: 18px;
+}
+
+.app-card-secondary .app-card-secondary__box a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.app-card-secondary .app-card-secondary__box a:hover{
+    color: orange;
+}
+
+.app-card-secondary .app-card-secondary__box p {
+    font-size: 14px;
+}
+
+.category {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.category .category-box {
+    width: 100%;
+    height: 500px;
+    background: black;
+    border-radius: 25px;
+}
+
+.category .category-box h1 {
+    padding: 20px 20px 0 20px;
+    text-align: center;
+    font-size: 40px;
+    color: orange;
+    text-transform: uppercase;
+}
+
+.category .category-box hr {
+    height: 10px;
+    border-width: 0;
+    color: white;
+    background-color: white;
+}
+
+.category .category-box h3 {
+    padding: 0 20px 5px 20px;
+    text-align: left;
+    font-size: 20px;
+    color: white;
+}
+
+.category .category-box a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.category .category-box a:hover {
+    color: orange;
+}
+
+/*CSS RIGHT CONTENT */
+.rightcontent-app {
+    width: 1280px;
+    height: 500px;
+    background: white;
+}
+
+.rightcontent-app .rightcontent-app-right {
+    width: 100%;
+    background: white;
+}
+
+.rightcontent-app .rightcontent-app-right h1 {
+    font-size: 32px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 10px;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(253,45,45,1) 100%);
+}
+
+.flexing-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.rightcontent-app .rightcontent-app-right .rightcontent-app-right-card {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.rightcontent-app .rightcontent-app-right  .rightcontent-app-right-card__images {
+    position: relative;
+    overflow: hidden;
+    width: 150px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.rightcontent-app .rightcontent-app-right  .rightcontent-app-right-card__images img {
+    position: relative;
+    object-fit: cover;
+    filter: brightness(100%);
+    transition:  filter 0.5s ease;
+}
+
+.rightcontent-app .rightcontent-app-right  .rightcontent-app-right-card__images img:hover {
+    filter: brightness(120%);
+}
+
+.rightcontent-app .rightcontent-app-right .rightcontent-app-right-card__box {
+    width: 100%;
+    height: 100%;
+}
+
+.rightcontent-app .rightcontent-app-right .rightcontent-app-right-card__box h3 {
+    font-size: 14px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.rightcontent-app .rightcontent-app-right .rightcontent-app-right-card__box a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.rightcontent-app .rightcontent-app-right .rightcontent-app-right-card__box a:hover {
+    color: orange;
+}
+
+/*SCROLLING TYPE*/
+.scroll-bg {
+    background: white;
+    width: 40%;
+    padding: 10px;
+}
+
+.scroll-bg .scroll-bg-body {
+    width: 100%;
+    background: white;
+    height: 300px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.scroll-bg .scroll-bg-body .scroll-bg-body-object {
+    color: black;
+}
+
+/*ALL POST*/
+.app-card-allpost {
+    width: 100%;
+    height: 150px;
+    background: white;
+    box-shadow: 0 0 10px black;
+    margin-bottom: 20px;
+    display: flex;
+    border-radius: 10px;
+}
+
+.app-card-allpost .app-card-allpost__images {
+    position: relative;
+    overflow: hidden;
+    width: 400px;
+    height: 100%;
+    border-radius: 10px 0 0 10px;
+}
+
+.app-card-allpost .app-card-allpost__images img {
+    position: relative;
+    object-fit: cover;
+    filter: brightness(100%);
+    transition:  filter 0.5s ease;
+}
+
+.app-card-allpost .app-card-allpost__images img:hover {
+    filter: brightness(120%);
+}
+
+.app-card-allpost .app-card-allpost__box {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+}
+
+.app-card-allpost .app-card-allpost__box h3{
+    font-size: 18px;
+}
+
+.app-card-allpost .app-card-allpost__box a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.app-card-allpost .app-card-allpost__box a:hover {
+    color: orange;
+}
+
+.app-card-allpost .app-card-allpost__box p {
+    font-size: 14px;
+}
+
+/*CSS ADV MIDDLE*/
+.app-card-adv-middle {
+    width: 1280px;
+    height: 300px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0 0 10px black;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.app-card-adv-middle .app-card-adv-middle__images {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+}
+
+.app-card-adv-middle .app-card-adv-middle__images img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+/*CSS FOOTER*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+footer {
+    width: 100%;
+    border: 2px solid orange;
+    background: black;
+    height: auto;
+    font-family: "poppins", sans-serif;
+    color: white;
+}
+
+.footer-content {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content h1 {
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.footer-content h1:hover {
+    color: orange;
+}
+
+.footer-content p {
+    max-width: 500px;
+    font-size: 16px;
+}
+
+.footer-content h3 {
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.socials {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.socials li {
+    margin: 0 10px;
+}
+
+.socials a {
+    text-decoration: none;
+    color: white;
+}
+
+.socials a i {
+    font-size: 1.1rem;
+    transition: color .4s ease;
+}
+
+.socials a:hover i {
+    color: orange;
+}
+
+.footer-bottom {
+    background: black;
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.footer-bottom a {
+    text-decoration: none;
+    color: white;
+}
+

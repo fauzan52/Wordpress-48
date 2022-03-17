@@ -1,0 +1,87 @@
+HYPERLINK AUTHOR
+<a href="<?php echo get_author_posts_url(get_the_author_meta('ID')) ?>"><?php the_author(); ?></a>
+
+KETERANGAN WAKTU DAN HYPERLINK KATEGORI
+<p class="info_meta">
+    <?php echo ' ';
+					the_time('F j, Y'); ?> at <?php the_time('g:i a');
+					echo ' Kategori : '; the_category(', ');
+					?>
+</p>
+
+MEMBUAT HALAMAN ARCHIVE
+<p class="sub_judul">
+    <?php
+            if(is_category()){
+                echo 'Kategori : '; single_cat_title();
+            }
+
+            elseif (is_author()){
+                echo 'Author : ' . get_the_author();
+            }
+
+            else {
+                echo 'Halaman arsip' ;
+            }
+        ?>
+
+SEARCHING
+<div id="search_submit">
+    <?php get_search_form(); ?>
+</div>
+
+SEARCHING PAGE ONLY
+if ($post->post_type == 'page') continue;
+
+FEATURE ADD THUMBNAIL IMAGE
+function.php
+function init_setup () {
+register_nav_menus(array(
+'main_menu' => 'Menu Utama',
+'footer_menu' => 'Menu Footer'
+));
+// Add featured image
+add_theme_support('post-thumbnails');
+}
+
+add_action('after_setup_theme', 'init_setup');
+
+content.php
+<?php the_post_thumbnail(); ?>
+
+
+
+ADD WIDGET
+function widget_setup (){
+register_sidebar(array (
+'name' => "Sidebar Pertama",
+'id' => "sidebar1"
+));
+}
+add_action('widgets_init', 'widget_setup');
+
+// Memanggil Widget
+<aside>
+    <?php dynamic_sidebar('sidebar1') ?>
+</aside>
+
+PAGINATION WORDPRESS
+echo paginate_links();
+
+MEMBUAT CATEGORI DENGAN BATASAN 3 POST PER HALAMAN<h1>Category: Partai</h1>
+<?php 
+    $more_page_category = get_query_var('paged');
+
+    $category_partai = new WP_Query(array(
+        'category_name' => 'partai',
+        'posts_per_page' => 3,
+        'paged' => $more_page_category
+    ));
+
+    if ($category_partai->have_posts()):
+        while ($category_partai->have_posts()):
+            $category_partai->the_post();
+?>
+    <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
+
+
